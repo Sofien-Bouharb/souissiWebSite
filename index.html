@@ -13,13 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mr. & Ms. Soussi</title>
   </head>
   <body>
     <header>
       <ul class="menuList">
-        <li>
+        <li class="headerImg">
           <img
             src="images/blank-profile-picture-coming-soon.png"
             alt="picture"
@@ -27,10 +33,16 @@
             width="40"
           />
         </li>
-        <li><a href="#">A propos de nous</a></li>
-        <li><a href="#">Nos services</a></li>
-        <li><a href="#">Nos contacts</a></li>
-        <li>
+        <li class="aboutUs">
+          <a href="#biography" class="aboutUsLink">A propos de nous</a>
+        </li>
+        <li class="services">
+          <a href="#" class="servicesLink">Nos services</a>
+        </li>
+        <li class="contacts">
+          <a href="#" class="contactsLink">Nos contacts</a>
+        </li>
+        <li class="language">
           <select name="languageSelector">
             <option value="fr">Fr</option>
             <option value="en">En</option>
@@ -38,5 +50,45 @@
         </li>
       </ul>
     </header>
+    <main>
+      <article id="biography">
+        <h1 class="biographyTitle">A propos de nous.</h1>
+        <div class="firstBiography">
+          <img
+            src="images/blank-profile-picture-coming-soon.png"
+            alt="picture"
+            height="150"
+            width="150"
+            class="biographyImg1"
+          />
+          <p class="biographyP1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            deserunt sequi possimus laborum corporis voluptate consequuntur,
+            inventore explicabo delectus earum dolor hic totam, laboriosam
+            necessitatibus. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Quaerat nam repellat nesciunt, pariatur minima atque culpa
+            consequatur rerum fuga deleniti quae esse quidem eos qui.
+          </p>
+        </div>
+        <br /><br />
+        <div class="secondBiography">
+          <img
+            src="images/blank-profile-picture-coming-soon.png"
+            alt="picture"
+            height="150"
+            width="150"
+            class="biographyImg2"
+          />
+          <p class="biographyP2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            obcaecati eum reiciendis ad beatae quas facilis necessitatibus quae
+            voluptates perferendis incidunt ab quibusdam et modi illum ut
+            distinctio autem blanditiis cupiditate dolores? Natus excepturi
+            obcaecati ratione! Placeat magnam cupiditate dolor est harum, ut
+            ipsam, doloribus doloremque, numquam exercitationem unde delectus?
+          </p>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

@@ -17,6 +17,12 @@ body {
   background-color: royalblue;
   display: flex;
   flex-flow: column nowrap;
+  height: 1000px;
+}
+
+main {
+  display: block;
+  margin-top: 10vh;
 }
 
 /* header_styling */
@@ -26,7 +32,7 @@ header {
   left: 0;
   display: flex;
   flex-flow: row nowrap;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 }
 
@@ -100,6 +106,49 @@ header {
   color: #7a4f4f;
 }
 
+/* biography */
+
+.biographyImg1 {
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 5px;
+  float: left;
+}
+.biographyImg2 {
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-left: 10px;
+  float: right;
+}
+.biographyP1 {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.biographyP2 {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: justify;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.biographyTitle {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
 /* responsive_design */
 
 /* small */
@@ -127,6 +176,29 @@ header {
   .menuList li:hover {
     transform: scale(1.1);
   }
+  main {
+    margin-top: 15vh;
+  }
+  header {
+    height: 12vh;
+  }
+  .headerImg {
+    width: 10vh;
+    height: auto;
+  }
+  .secondBiography {
+    margin-top: 1rem;
+  }
+  .biographyP1 {
+    font-size: 1.5rem;
+  }
+  .biographyP2 {
+    font-size: 1.5rem;
+  }
+  .biographyTitle {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
 }
 
 /* medium */
@@ -144,6 +216,21 @@ header {
     width: 10vw;
     height: auto;
   }
+  main {
+    margin-top: 14vh;
+  }
+  .biographyImg1 {
+    width: 200px;
+    height: auto;
+  }
+  .biographyImg2 {
+    width: 200px;
+    height: auto;
+  }
+  .biographyTitle {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
 }
 
 /* large */
@@ -155,6 +242,27 @@ header {
     width: 3vw;
     height: 4vh;
     font-size: 1rem;
+  }
+  main {
+    margin-top: 13vh;
+  }
+  .biographyImg1 {
+    width: 250px;
+    height: auto;
+  }
+  .biographyImg2 {
+    width: 250px;
+    height: auto;
+  }
+  .biographyP1 {
+    font-size: 2rem;
+  }
+  .biographyP2 {
+    font-size: 2rem;
+  }
+  .biographyTitle {
+    font-size: 5rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -168,6 +276,24 @@ header {
     height: 5vh;
     font-size: 1.2rem;
   }
+  main {
+    margin-top: 20vh;
+  }
+  .biographyImg1 {
+    width: 300px;
+    height: auto;
+  }
+  .biographyImg2 {
+    width: 300px;
+    height: auto;
+  }
+  .secondBiography {
+    margin-top: 5rem;
+  }
+  .biographyTitle {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
 }
 
 /* mobile device landscape  */
@@ -176,5 +302,8 @@ header {
     width: 5vw;
     height: 7vh;
     font-size: 1.2rem;
+  }
+  main {
+    margin-top: 30vh;
   }
 }
