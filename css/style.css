@@ -13,7 +13,7 @@ html {
 }
 body {
   font: 1.5rem, "Nunito", "sans-serif";
-  min-height: 100vh;
+  color: #333;
   background-color: royalblue;
   display: flex;
   flex-flow: column nowrap;
@@ -160,6 +160,32 @@ header {
   margin-bottom: 15px;
   font-size: 2rem;
 }
+
+/* services */
+
+.servicesTitle {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.nosServices {
+  padding: 10px;
+}
+
+.nosServices p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.nosServices h2 {
+  color: #7a4f4f;
+}
+
 /* responsive_design */
 
 /* small */
