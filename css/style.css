@@ -99,6 +99,7 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 0.5rem;
+  text-align: center;
 }
 
 .menuList li select option {
@@ -134,6 +135,7 @@ header {
   margin-right: 5px;
   margin-left: 5px;
   text-align: justify;
+  /* word-spacing: ; */
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -173,16 +175,23 @@ header {
 }
 
 .nosServices {
-  padding: 10px;
+  padding: 20px;
 }
 
 .nosServices p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  text-align: justify;
+
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .nosServices h2 {
+  margin-top: 5px;
   color: #7a4f4f;
 }
 
@@ -236,6 +245,16 @@ header {
     font-size: 3rem;
     margin-bottom: 30px;
   }
+  .servicesTitle {
+    font-size: 3rem;
+  }
+
+  .nosServices h2 {
+    font-size: 2rem;
+  }
+  .nosServices p {
+    font-size: 1.5rem;
+  }
 }
 
 /* medium */
@@ -276,6 +295,16 @@ header {
   .biographyP2 {
     font-size: 2rem;
   }
+  .servicesTitle {
+    font-size: 4rem;
+  }
+
+  .nosServices h2 {
+    font-size: 2.5rem;
+  }
+  .nosServices p {
+    font-size: 2rem;
+  }
 }
 
 /* large */
@@ -310,6 +339,16 @@ header {
   .biographyTitle {
     font-size: 5rem;
     margin-bottom: 30px;
+  }
+  .servicesTitle {
+    font-size: 5rem;
+  }
+
+  .nosServices h2 {
+    font-size: 3rem;
+  }
+  .nosServices p {
+    font-size: 2.2rem;
   }
 }
 
@@ -347,6 +386,16 @@ header {
     font-size: 2.5rem;
   }
   .biographyP2 {
+    font-size: 2.5rem;
+  }
+  .servicesTitle {
+    font-size: 5rem;
+  }
+
+  .nosServices h2 {
+    font-size: 3.5rem;
+  }
+  .nosServices p {
     font-size: 2.5rem;
   }
 }
