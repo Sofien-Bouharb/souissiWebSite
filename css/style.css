@@ -64,17 +64,16 @@ header {
   border: none;
 }
 .menuList li a {
+  display: block;
+  font-size: 0.6rem;
   text-decoration: none;
   color: #4b3e3e;
-  font-size: 0.6rem;
   font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
-  display: block;
   font-weight: bold;
+  font-style: normal;
 }
 
-.menuList li:hover {
+.menuList li:active {
   transform: scale(1.2);
 }
 
@@ -105,6 +104,7 @@ header {
 .menuList li select option {
   background-color: rgb(53, 148, 148);
   color: #7a4f4f;
+  text-align: center;
 }
 
 .firstBiography {
@@ -154,6 +154,32 @@ header {
   font-size: 1.2rem;
 }
 
+.articlesPub {
+  padding: 10px;
+}
+
+.articlesPub .articlePubTitle {
+  color: rgb(145, 76, 76);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.articlesPub .listeArticles {
+  list-style-type: none;
+}
+
+.articlesPub ul li {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.articlesPub .listeArticles p {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
 .biographyTitle {
   display: flex;
   flex-flow: column;
@@ -196,6 +222,13 @@ header {
 }
 
 /* responsive_design */
+/* exception */
+@media screen and (min-width: 370px) {
+  .menuList li a {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
 
 /* small */
 
@@ -255,13 +288,16 @@ header {
   .nosServices p {
     font-size: 1.5rem;
   }
+  .menuList ul li:nth-child(2) {
+    margin-right: 40 px;
+  }
 }
 
 /* medium */
 @media screen and (min-width: 768px) {
   .menuList li a {
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 1.6rem;
+    font-weight: 525;
   }
   .menuList li select {
     width: 4vw;
@@ -310,7 +346,7 @@ header {
 /* large */
 @media screen and (min-width: 1024px) {
   .menuList li a {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
   .menuList li select {
     width: 3vw;
