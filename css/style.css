@@ -169,6 +169,7 @@ header {
 }
 
 .articlesPub ul li {
+  color: rgb(100, 37, 16);
   font-weight: bold;
   margin-bottom: 0.3rem;
   margin-left: 10px;
@@ -291,6 +292,21 @@ header {
   .menuList ul li:nth-child(2) {
     margin-right: 40 px;
   }
+  .articlesPub .articlePubTitle {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  .articlesPub ul li {
+    margin-bottom: 0.3rem;
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+
+  .articlesPub .listeArticles p {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
 }
 
 /* medium */
@@ -341,6 +357,21 @@ header {
   .nosServices p {
     font-size: 2rem;
   }
+  .articlesPub .articlePubTitle {
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+  }
+  .articlesPub ul li {
+    margin-bottom: 0.3rem;
+    margin-left: 10px;
+    font-size: 1.6rem;
+  }
+
+  .articlesPub .listeArticles p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
 }
 
 /* large */
@@ -385,6 +416,21 @@ header {
   }
   .nosServices p {
     font-size: 2.2rem;
+  }
+  .articlesPub .articlePubTitle {
+    margin-bottom: 15px;
+    font-size: 1.9rem;
+  }
+  .articlesPub ul li {
+    margin-bottom: 0.3rem;
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .articlesPub .listeArticles p {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
   }
 }
 
@@ -433,6 +479,21 @@ header {
   }
   .nosServices p {
     font-size: 2.5rem;
+  }
+  .articlesPub .articlePubTitle {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+  .articlesPub ul li {
+    margin-bottom: 0.3rem;
+    margin-left: 10px;
+    font-size: 1.9rem;
+  }
+
+  .articlesPub .listeArticles p {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
   }
 }
 
