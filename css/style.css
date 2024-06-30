@@ -99,12 +99,14 @@ header {
   font-style: normal;
   font-size: 0.5rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .menuList li select option {
   background-color: rgb(53, 148, 148);
   color: #7a4f4f;
   text-align: center;
+  cursor: pointer;
 }
 
 .firstBiography {
@@ -131,6 +133,12 @@ header {
   margin-left: 10px;
   float: right;
 }
+
+.biographyImg1:hover,
+.biographyImg2:hover {
+  transform: scale(1.05);
+}
+
 .biographyP1 {
   margin-right: 5px;
   margin-left: 5px;
@@ -271,6 +279,69 @@ header {
   color: rgb(33, 54, 14);
 }
 
+/* images_styling */
+
+.someImages {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+.slider {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  width: 300px;
+  max-height: 300px;
+}
+
+.slider img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  display: none;
+}
+
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 0%, 0.341);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* animation */
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* footer_styling */
 
 footer {
@@ -408,18 +479,43 @@ footer {
   .contactsTitle {
     font-size: 3rem;
   }
+  .slider {
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slides {
+    width: 85vw;
+    max-height: 85vh;
+  }
+
+  .slider img {
+    border-radius: 10px;
+    width: 85vw;
+    height: 85vh;
+  }
+
+  .slider button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
 }
 
 /* medium */
 @media screen and (min-width: 768px) {
   .menuList li a {
     font-size: 1.6rem;
+
     font-weight: 525;
   }
   .menuList li select {
     width: 4vw;
-    height: 4vh;
+    height: 3vh;
     font-size: 1rem;
+    margin-right: 15px;
   }
   .menuList li img {
     width: 10vw;
@@ -438,6 +534,7 @@ footer {
     height: auto;
     margin-left: 15px;
   }
+
   .biographyTitle {
     font-size: 4rem;
     margin-bottom: 30px;
@@ -491,6 +588,29 @@ footer {
   }
   .contactsTitle {
     font-size: 4rem;
+  }
+  .slider {
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slides {
+    width: 85vw;
+    max-height: 85vh;
+  }
+
+  .slider img {
+    border-radius: 10px;
+    width: 85vw;
+    height: 85vh;
+  }
+
+  .slider button {
+    font-size: 1rem;
+    padding: 10px 15px;
   }
 }
 
@@ -562,6 +682,29 @@ footer {
   .contactsTitle {
     font-size: 5rem;
   }
+  .slider {
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slides {
+    width: 85vw;
+    max-height: 85vh;
+  }
+
+  .slider img {
+    border-radius: 10px;
+    width: 85vw;
+    height: 85vh;
+  }
+
+  .slider button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
 }
 
 /* xlarge  */
@@ -608,7 +751,7 @@ footer {
     font-size: 3.5rem;
   }
   .nosServices p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .articlesPub .articlePubTitle {
     margin-bottom: 15px;
@@ -634,6 +777,29 @@ footer {
   }
   .contactsTitle {
     font-size: 5rem;
+  }
+  .slider {
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .slides {
+    width: 85vw;
+    max-height: 85vh;
+  }
+
+  .slider img {
+    border-radius: 10px;
+    width: 85vw;
+    height: 85vh;
+  }
+
+  .slider button {
+    font-size: 1rem;
+    padding: 10px 15px;
   }
 }
 
